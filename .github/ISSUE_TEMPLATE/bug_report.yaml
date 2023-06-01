@@ -25,13 +25,13 @@ body:
         3. 干了什么？
     validations:
       required: true
-  - type: dropdown
-    attributes:
-      label: 当程序出行错误时，有没有正常提示？
-      multiple: true
-      options:
-        - 是的
-        - 没有
+ - type: dropdown
+  attributes:
+    label: 当程序出行错误时，有没有正常提示？
+    required: true
+    options:
+       - 是的
+       - 没有
   - type: textarea
     attributes:
       label: 使用环境及信息
