@@ -28,7 +28,6 @@ body:
   - type: dropdown
     attributes:
       label: 当程序出行错误时，是否有正常提示？
-      required: true
       multiple: false
       options:
         - label: 是的
@@ -36,6 +35,7 @@ body:
         - label: 没有
           value: 没有
       description: 如果程序出现错误，是否有提示信息？
+      required: true
     validations:
       required: true
   - type: textarea
