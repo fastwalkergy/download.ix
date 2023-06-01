@@ -1,6 +1,6 @@
 name: 功能请求（Suggest using Simplified Chinese to answer）
 description: File a bug/issue
-title: "[Bug]"
+title: " "
 labels: [Bug, Needs Triage]
 body:
   - type: textarea
