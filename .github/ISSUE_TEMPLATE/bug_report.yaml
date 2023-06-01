@@ -34,9 +34,9 @@ body:
         - 没有
   - type: textarea
     attributes:
-      label: Environment
+      label: 使用环境及信息
       description: |
-        examples:
+        示例:
           **操作系统**: Ubuntu 20.04
           **系统版本**: 13.14.0
           **程序版本**: 7.6.3
@@ -45,7 +45,7 @@ body:
         操作系统:
         系统版本:
         程序版本:
-        错误页面中。
+        错误xxx页面中。
       render: markdown
     validations:
       required: true
