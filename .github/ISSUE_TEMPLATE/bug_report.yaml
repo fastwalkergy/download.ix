@@ -30,10 +30,8 @@ body:
       label: 当程序出行错误时，是否有正常提示？
       multiple: false
       options:
-        - label: 是的
-          value: 是的
-        - label: 没有
-          value: 没有
+        - Firefox
+        - Chrome
       description: 如果程序出现错误，是否有提示信息？
       required: true
     validations:
