@@ -10,6 +10,16 @@ body:
       options:
         - label: 我已经搜索了现有问题
           required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 你需要为哪个东西进行错误报告？
+      multiple: true
+      options:
+        - github page的网站
+        - Phantom-Shadow-Kit
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: 当前程序出现的行为
