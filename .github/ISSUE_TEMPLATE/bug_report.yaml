@@ -23,8 +23,6 @@ body:
         1. 点击某个页面...
         2. 使用了什么操作...
         3. 干了什么？
-    validations:
-      required: true
   - type: dropdown
     attributes:
       label: 当程序出行错误时，有没有正常提示？
