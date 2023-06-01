@@ -9,29 +9,20 @@ body:
       description: 简明地描述您需要的功能。
     validations:
       required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 让我联系你
+      description: 怎么让我联系？你可以填入邮箱！
+      placeholder: email@email.com
+    validations:
+      required: false
   - type: dropdown
     attributes:
-      label: 当程序出行错误时，有没有正常提示？
+      label: 是否允许我联系你？
       options:
         - 是的
-        - 没有
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: 使用环境及信息
-      description: |
-        示例:
-          **操作系统**: Ubuntu 20.04
-          **系统版本**: 13.14.0
-          **程序版本**: 7.6.3
-          **错误发生在哪个页面？（请简要描述，比如录音界面就说录音界面，或主界面等）** 
-      value: |
-        操作系统:
-        系统版本:
-        程序版本:
-        错误xxx页面中。
-      render: markdown
+        - 不是
     validations:
       required: true
   - type: textarea
