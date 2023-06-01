@@ -3,51 +3,55 @@ description: File a bug/issue
 title: "[Bug]"
 labels: [Bug, Needs Triage]
 body:
+description: 我们建议使用中文。We suggest using Chinese.
 - type: checkboxes
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
+    label: 这是否存在现有问题？
+    description: 请搜索以查看您遇到的错误是否已存在问题。
     options:
-    - label: I have searched the existing issues
+    - label: 我已经搜索了现有问题
       required: true
 - type: textarea
   attributes:
-    label: Current Behavior
-    description: A concise description of what you're experiencing.
+    label: 当前程序出现的行为
+    description: 简明地描述您经历的事情。
   validations:
-    required: false
+    required: true
 - type: textarea
   attributes:
-    label: Expected Behavior
-    description: A concise description of what you expected to happen.
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: Steps To Reproduce
-    description: Steps to reproduce the behavior.
+    label: 能不能用步骤告诉我你是如何操作的，然后报错？
     placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
-      4. See error...
+      1. 点击某个页面...
+      2. 使用了什么操作...
+      3. 干了什么？
   validations:
-    required: false
+    required: true
+- type: dropdown
+    attributes:
+      label: 当程序出行错误时，有没有正常提示？
+      multiple: true
+      options:
+        - 是的
+        - 没有
+   validations:
+    required: true
 - type: textarea
   attributes:
     label: Environment
     description: |
       examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
+        - **操作系统**: Ubuntu 20.04
+        - **系统版本**: 13.14.0
+        - **程序版本**: 7.6.3
+        - **错误发生在哪个页面？** （请简要描述，比如录音界面就说录音界面，或主界面等）
     value: |
-        - OS:
-        - Node:
-        - npm:
+        - 操作系统:
+        - 系统版本:
+        - 程序版本:
+        - 错误   页面中。
     render: markdown
   validations:
-    required: false
+    required: true
 - type: textarea
   attributes:
     label: Anything else?
