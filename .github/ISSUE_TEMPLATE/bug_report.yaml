@@ -1,60 +1,60 @@
 name: 🐞 Bug
 description: File a bug/issue
-title: "[Bug]:<title>"
+title: "[Bug]"
 labels: [Bug, Needs Triage]
 body:
-- type: checkboxes
-  attributes:
-    label: 这是否存在现有问题？
-    description: 请搜索以查看您遇到的错误是否已存在问题。
-    options:
-    - label: 我已经搜索了现有问题
+  - type: checkboxes
+    attributes:
+      label: 这是否存在现有问题？
+      description: 请搜索以查看您遇到的错误是否已存在问题。
+      options:
+        - label: 我已经搜索了现有问题
+          required: true
+  - type: textarea
+    attributes:
+      label: 当前程序出现的行为
+      description: 简明地描述您经历的事情。
+    validations:
       required: true
-- type: textarea
-  attributes:
-    label: 当前程序出现的行为
-    description: 简明地描述您经历的事情。
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: 能不能用步骤告诉我你是如何操作的，然后报错？
-    placeholder: |
-      1. 点击某个页面...
-      2. 使用了什么操作...
-      3. 干了什么？
-  validations:
-    required: true
-- type: dropdown
+  - type: textarea
+    attributes:
+      label: 能不能用步骤告诉我你是如何操作的，然后报错？
+      placeholder: |
+        1. 点击某个页面...
+        2. 使用了什么操作...
+        3. 干了什么？
+    validations:
+      required: true
+  - type: dropdown
     attributes:
       label: 当程序出行错误时，有没有正常提示？
       multiple: true
       options:
-        - "是的"
-        - "没有"
-- type: textarea
-  attributes:
-    label: Environment
-    description: |
-      examples:
-        - **操作系统**: Ubuntu 20.04
-        - **系统版本**: 13.14.0
-        - **程序版本**: 7.6.3
-        - **错误发生在哪个页面？（请简要描述，比如录音界面就说录音界面，或主界面等）** 
-    value: |
-        - 操作系统:
-        - 系统版本:
-        - 程序版本:
-        - 错误   页面中。
-    render: markdown
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Anything else?
-    description: |
-      Links? References? Anything that will give us more context about the issue you are encountering!
+        - 是的
+        - 没有
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        examples:
+          **操作系统**: Ubuntu 20.04
+          **系统版本**: 13.14.0
+          **程序版本**: 7.6.3
+          **错误发生在哪个页面？（请简要描述，比如录音界面就说录音界面，或主界面等）** 
+      value: |
+        操作系统:
+        系统版本:
+        程序版本:
+        错误页面中。
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: |
+        Links? References? Anything that will give us more context about the issue you are encountering!
 
-      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
-  validations:
-    required: false
+        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
