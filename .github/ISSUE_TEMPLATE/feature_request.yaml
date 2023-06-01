@@ -1,7 +1,7 @@
 name: 功能请求（Suggest using Simplified Chinese to answer）
-description: File a bug/issue
+description: 提出建议
 title: " "
-labels: [Bug, Needs Triage]
+labels: [suggest, Needs Triage]
 body:
   - type: textarea
     attributes:
