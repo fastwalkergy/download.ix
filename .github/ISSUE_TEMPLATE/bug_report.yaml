@@ -13,10 +13,10 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: 你需要为哪个东西进行错误报告？
+      label: 你需要为下列哪个进行错误报告？
       multiple: true
       options:
-        - github page的网站
+        - github page上的网站
         - Phantom-Shadow-Kit
     validations:
       required: true
