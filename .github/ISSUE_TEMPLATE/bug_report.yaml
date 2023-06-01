@@ -3,8 +3,6 @@ description: File a bug/issue
 title: "[Bug]"
 labels: [Bug, Needs Triage]
 body:
-name: "zh"
-description: 我们建议使用中文。We suggest using Chinese.
 - type: checkboxes
   attributes:
     label: 这是否存在现有问题？
