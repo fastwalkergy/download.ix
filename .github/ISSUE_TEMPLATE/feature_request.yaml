@@ -1,6 +1,6 @@
 name: 功能请求（Suggest using Simplified Chinese to answer）
 description: 提出建议
-title: " "
+title: "suggest"
 labels: [suggest, Needs Triage]
 body:
   - type: textarea
