@@ -31,6 +31,8 @@ body:
       options:
         - 是的
         - 没有
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: 使用环境及信息
