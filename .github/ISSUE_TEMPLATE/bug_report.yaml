@@ -25,13 +25,19 @@ body:
         3. 干了什么？
     validations:
       required: true
- - type: dropdown
-  attributes:
-    label: 当程序出行错误时，有没有正常提示？
-    required: true
-    options:
-       - 是的
-       - 没有
+  - type: dropdown
+    attributes:
+      label: 当程序出行错误时，是否有正常提示？
+      required: true
+      multiple: false
+      options:
+        - label: 是的
+          value: 是的
+        - label: 没有
+          value: 没有
+      description: 如果程序出现错误，是否有提示信息？
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: 使用环境及信息
@@ -40,7 +46,7 @@ body:
           **操作系统**: Ubuntu 20.04
           **系统版本**: 13.14.0
           **程序版本**: 7.6.3
-          **错误发生在哪个页面？（请简要描述，比如录音界面就说录音界面，或主界面等）** 
+          **错误发生在哪个页面？（请简要描述，比如录音界面就说录音界面，或主界面等）**
       value: |
         操作系统:
         系统版本:
