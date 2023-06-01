@@ -1,6 +1,6 @@
 name: 🐞 Bug
 description: File a bug/issue
-title: "[Bug]"
+title: "[Bug]:<title>"
 labels: [Bug, Needs Triage]
 body:
 - type: checkboxes
@@ -30,8 +30,8 @@ body:
       label: 当程序出行错误时，有没有正常提示？
       multiple: true
       options:
-        - 是的
-        - 没有
+        - "是的"
+        - "没有"
 - type: textarea
   attributes:
     label: Environment
