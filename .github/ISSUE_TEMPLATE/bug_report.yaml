@@ -28,7 +28,6 @@ body:
   - type: dropdown
     attributes:
       label: 当程序出行错误时，有没有正常提示？
-      multiple: true
       options:
         - 是的
         - 没有
